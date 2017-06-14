@@ -49,7 +49,19 @@ public:
     bool isBST(Node* node);
     void levelOrderTraversal(Node* node);
     void mirror(Node* node);
+//    lca(40, 80) == 60
+//    lca(60, 80) == 60
+//    lca(10, 50) == 40
+//    lca(10, 80) == 60
+    // lca(10, 90)  == 60
+//            60
+//    40          80
+//10      50    70    90
     
+    Node* lcaRecursive(Node* one, Node* two);
+    Node* lcaRecursive(Node* root,Node* one, Node* two);
+    
+    Node* lcaIterative(Node* one, Node* two);
     int count(Node* node);
     Node* getRoot();
     void display();
